@@ -1,0 +1,12 @@
+#!name=Surge Pro
+#!desc=显示Surge的启动时间以及订阅到期日期
+# 更新日期：2022.06.15
+# 版本：1.5
+
+[Panel]
+#Surge Pro
+Surge-Pro = script-name=Surge-Pro,update-interval=1
+
+[Script]
+#Surge Pro
+Surge-Pro = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/FTZXTM/Surge/1ac5d3772f01339b78c4f3ae1cb03142c850967c/Surge-Pro.js ,argument=icon=paperplane.circle&color=#f6c970
