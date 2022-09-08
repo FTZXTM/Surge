@@ -4,6 +4,9 @@
  * 由@Rabbit-Spec修改
  * 更新日期：2022.06.15
  * 版本：1.5
+
+可选参数：授权有效期，后面填入你功能订阅到期的时间。
+----------------------------------------
 */
 
 let params = getParams($argument)
@@ -19,7 +22,9 @@ if ($trigger == "button") await httpAPI("/v1/profiles/reload");
 
   $done({
       title:"Surge Pro®",
-      content:`启动时长: ${startTime}`,
+      content:
+	`启动时长: ${startTime}\n` +
+        `订阅到期: 2022-06-03`,
 		icon: params.icon,
 		"icon-color":params.color
     });
